@@ -122,7 +122,7 @@ def newtonR(a,b,tolerance,choose_a_b):
     e=math.e
     denklem = input("Denklemi yazın= ")
     eq=sym.sympify(denklem)
-    if (choose_a_b!= 0):
+    if (choose_a_b!= 0 and a!=b!=choose_a_b):
         a=choose_a_b
     else:
         if(issolvable(a,b,eq)):
